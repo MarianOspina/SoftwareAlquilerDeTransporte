@@ -21,6 +21,14 @@ const conductorSchema = mongoose.Schema({
     licenciaConduccion: {
         type: Number,
         requiered: true,
+    },
+    genero: {
+        type: String,
+        requiered: true,
+    },
+    telefono: {
+        type: Number,
+        requiered: true,
     }
 });
 module.exports = mongoose.model("Conductor", conductorSchema);
